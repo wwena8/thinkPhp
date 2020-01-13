@@ -1,2 +1,3 @@
 https://github.com/top-think/think
+composer create-project topthink/think 项目名 版本号
 php think run
