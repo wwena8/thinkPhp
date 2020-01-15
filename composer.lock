@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7016cbad3b4208a23482beec539ac8d7",
+    "content-hash": "f0d6acdddf78071cef71057f76594b10",
     "packages": [
         {
             "name": "topthink/framework",
@@ -56,6 +56,42 @@
                 "thinkphp"
             ],
             "time": "2019-11-17T23:22:02+00:00"
+        },
+        {
+            "name": "topthink/think-helper",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-helper.git",
+                "reference": "92c24d1057118dada3ca18232cd18ef38a831ad6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-helper/zipball/92c24d1057118dada3ca18232cd18ef38a831ad6",
+                "reference": "92c24d1057118dada3ca18232cd18ef38a831ad6",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "think\\": "src"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "yunwuxin",
+                    "email": "448901948@qq.com"
+                }
+            ],
+            "description": "The ThinkPHP6 Helper Package",
+            "time": "2019-07-10T08:52:50+00:00"
         },
         {
             "name": "topthink/think-installer",
