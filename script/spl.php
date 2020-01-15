@@ -1,7 +1,9 @@
 <?php
 spl_autoload_register("autoload", true, true);
 function autoload($className = '') {
-    include "./spl.php";
+    include "./Singwa.php";
 }
-$a = new Singwa();
+class_alias('Singwa', 'S');
+//$a = new Singwa();
+$a = new S();
 $a->say();

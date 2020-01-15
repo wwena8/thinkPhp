@@ -2,3 +2,10 @@ https://github.com/top-think/think
 composer create-project topthink/think 项目名 版本号
 php think run
 php think optimize:autoload
+自动加载loader
+$classAlias = [];
+$prefixLengthsPsr4 = [];
+$prefixDirsPsr4    = [];
+$fallbackDirsPsr4  = [];
+自定义目录加载到应用
+self::addAutoLoadDir($rootPath . 'singwa');
