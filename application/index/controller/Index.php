@@ -18,4 +18,10 @@ class Index
     {
         Send::push();
     }
+
+    public function obj()
+    {
+        $obj = new \ObjArray();
+
+    }
 }

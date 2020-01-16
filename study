@@ -1,7 +1,9 @@
+一 初始化：
 https://github.com/top-think/think
 composer create-project topthink/think 项目名 版本号
 php think run
 php think optimize:autoload
+二 类的自动加载：
 自动加载loader
 $classAlias = [];
 $prefixLengthsPsr4 = [];
@@ -12,3 +14,15 @@ self::addAutoLoadDir($rootPath . 'singwa');
 1 如何将别的深层次目录类加载到应用？
 composer自动加载机制
 composer require topthink/think-helper
+三 配置文件：
+惯例配置
+应用配置
+模块配置
+动态配置
+ArrayAccess 像访问数组一样访问对象
+2 extend目录下不需要命名空间？
+Yconf:
+phpize生产configure文件
+./configure --with-php-config=/usr/local/php/php-7.0/bin/php-config
+make -j
+make install
