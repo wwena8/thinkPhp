@@ -24,4 +24,14 @@ class Index
         $obj = new \ObjArray();
 
     }
+
+    public function yaconf()
+    {
+        echo \Yaconf::get("abc.title");
+    }
+
+    public function yaml()
+    {
+        var_dump(\Config::get("singwa."));
+    }
 }

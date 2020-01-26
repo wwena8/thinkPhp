@@ -21,8 +21,26 @@ composer require topthink/think-helper
 动态配置
 ArrayAccess 像访问数组一样访问对象
 2 extend目录下不需要命名空间？
-Yconf:
+Yaconf:
 phpize生产configure文件
 ./configure --with-php-config=/usr/local/php/php-7.0/bin/php-config
 make -j
 make install
+.so文件位置
+/usr/local/php/php-7.0/lib/php/extensions/debug-non-zts-20151012/
+yaconf常驻内存
+3 config底层分析：
+导图：load->set->get->ArrayAccess
+parse_ini_file解析文件函数
+yaml 数据序列化
+pecl install yaml
+yaml_parse_file(filename)
+2366094489
+四 容器与设计模式
+1 单例模式：
+private构造函数；
+静态成员变量保存类实例；
+访问实例的静态方法；
+2 注册树模式
+类对象注册到全局对象树上，需要时再从树上拿下来
+3 依赖注入和控制反转
