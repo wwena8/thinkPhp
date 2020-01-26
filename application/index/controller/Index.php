@@ -2,6 +2,10 @@
 namespace app\index\controller;
 
 use ali\Send;
+use di\book;
+use di\Car;
+use di\Person;
+
 class Index
 {
     public function index()
@@ -33,5 +37,13 @@ class Index
     public function yaml()
     {
         var_dump(\Config::get("singwa."));
+    }
+
+    public function di()
+    {
+        $p = new Person();
+        $c = new Car();
+        $b = new Book();
+        echo $p->buy($b);
     }
 }
