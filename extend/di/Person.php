@@ -8,14 +8,20 @@
 namespace di;
 class Person
 {
+
+    public function __construct($obj)
+    {
+        $this->obj = $obj;
+    }
+
     /**
      * 依赖：person依赖于¥obj
      * 注入：$obj注入person类
      * @param $obj
      * @return mixed
      */
-    public function buy($obj)
+    public function buy()
     {
-        return $obj->pay();
+        return $this->obj->pay();
     }
 }

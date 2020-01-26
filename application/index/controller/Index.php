@@ -4,6 +4,7 @@ namespace app\index\controller;
 use ali\Send;
 use di\book;
 use di\Car;
+use di\Container;
 use di\Person;
 
 class Index
@@ -45,5 +46,10 @@ class Index
         $c = new Car();
         $b = new Book();
         echo $p->buy($b);
+    }
+
+    public function container()
+    {
+        Container::getInstance()->set('person','\di\Person');
     }
 }
