@@ -46,5 +46,14 @@ private构造函数；
 3 依赖注入和控制反转 一个概念的不同角度描述
 只需要在应用层面修改代码逻辑
 4 反射
+PHP在运行状态中，动态的获取类、方法、属性、参数、注释等信息和动态调用对象的方法的功能
 框架中的反射
 5 自制容器
+$this->instance //对象实例
+$this->bind //绑定标识
+$this->name //标识别名
+isset instanceof
+bindTo
+作业：
+a return $method->invokeArgs(null, $args);为何第一个参数是null
+b bindParams($reflect, $vars = [])函数内容

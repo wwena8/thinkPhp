@@ -48,8 +48,14 @@ class Index
         echo $p->buy($b);
     }
 
+    /**
+     * 三种方式获得app
+     */
     public function container()
     {
-        Container::getInstance()->set('person','\di\Person');
+        $config = new \Config();
+        var_dump($config::get("app."));
+        var_dump(\think\Container::get('config')->get("app."));
+        dump(app("config"));
     }
 }
