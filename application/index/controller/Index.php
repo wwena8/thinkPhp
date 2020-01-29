@@ -58,4 +58,9 @@ class Index
         var_dump(\think\Container::get('config')->get("app."));
         dump(app("config"));
     }
+
+    public function facade()
+    {
+        \Test::abcd("1");
+    }
 }

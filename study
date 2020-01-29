@@ -57,3 +57,4 @@ bindTo
 作业：
 a return $method->invokeArgs(null, $args);为何第一个参数是null
 b bindParams($reflect, $vars = [])函数内容
+6 门面模式facade
