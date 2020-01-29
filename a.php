@@ -17,4 +17,6 @@ foreach ($rs as $rr) {
     $cmd2 = "mv $path$rr/80/video.m4s $path$i.mp4";
     shell_exec($cmd1);
     shell_exec($cmd2);
+//    echo $cmd1.PHP_EOL.$cmd2.PHP_EOL;
+    $i++;
 }
