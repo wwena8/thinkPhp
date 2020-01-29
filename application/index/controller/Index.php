@@ -2,10 +2,13 @@
 namespace app\index\controller;
 
 use ali\Send;
+use app\common\Singwa;
+use app\facade\Sing;
 use di\book;
 use di\Car;
 use di\Container;
 use di\Person;
+use think\Facade;
 
 class Index
 {
@@ -61,6 +64,12 @@ class Index
 
     public function facade()
     {
-        \Test::abcd("1");
+        $s = new Singwa();
+        echo $s->abcd();
+        //静态方式调用实际方法中的内容 第1种方法
+        echo \app\facade\Singwa::abcd();
+        //第1种方法
+        Facade::bind('app\facade\Sing', 'app\common\Sing');
+        echo Sing::abcd();
     }
 }
