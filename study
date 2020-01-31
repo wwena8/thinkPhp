@@ -59,3 +59,10 @@ a return $method->invokeArgs(null, $args);为何第一个参数是null
 b bindParams($reflect, $vars = [])函数内容
 6 门面模式facade
 facade 静态get-> 容器实例->实际类 config get
+五 框架执行流程与路由
+1 框架初始化流程
+provider.php    注册服务的容器对象实例
+初始化配置信息->加载所有相关文件（先加载application再加载模块）->
+六 路由
+1 路由检测 scandir($this->routePath);
+2
